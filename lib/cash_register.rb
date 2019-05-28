@@ -9,6 +9,7 @@ class CashRegister
     quantity.times do 
     @total += price
   end
+  end
   
   def apply_discount()
   end
