@@ -5,7 +5,7 @@ class CashRegister
     @total = 0
   end
   
-  def add_item(title, price, quantity = 0)
+  def add_item(title, price, quantity = 1)
     quantity.times do 
     @total += price
   end
