@@ -1,5 +1,6 @@
 class CashRegister
   attr_accessor :total, :discount
+  
   def initialize(discount = 0)
     @discount = discount
     @total = 0
@@ -8,6 +9,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     quantity.times do 
     @total += price
+    @items << title
   end
   end
   
@@ -19,5 +21,9 @@ class CashRegister
    else
      "There is no discount to apply."
    end
+  end
+  
+  def items
+    @items
   end
 end
