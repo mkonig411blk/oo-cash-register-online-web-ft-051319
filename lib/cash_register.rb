@@ -12,7 +12,7 @@ class CashRegister
   end
   
   def apply_discount
-    # discount comes in as 20 instead of .20, so we divide by 100.0
+    # discount comes in as 20 instead of .20, so we divide by 100.0 so it is float
     @total = @total - (@total*(self.discount/100.0))
   end
 end
